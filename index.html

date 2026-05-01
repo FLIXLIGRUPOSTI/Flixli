@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flixli - Servicios Locales</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><i class="fas fa-bolt"></i><span>Flixli</span></div>
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#como-funciona">Cómo Funciona</a>
+            <a href="#registro" class="btn-nav">Registrarse</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Encuentra servicios locales al instante</h1>
+            <p>Conectamos clientes con profesionales de confianza: transporte, mudanzas, turismo y más.</p>
+            <div class="hero-buttons">
+                <a href="#registro" class="btn-primary">Soy Cliente</a>
+                <a href="#registro-proveedor" class="btn-secondary">Soy Proveedor</a>
+            </div>
+        </div>
+        <div class="hero-image"><i class="fas fa-truck-moving"></i></div>
+    </section>
+
+    <section class="services" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card"><i class="fas fa-truck"></i><h3>Flete y Carga</h3><p>Transporte de mercancía con choferes verificados</p></div>
+            <div class="service-card"><i class="fas fa-home"></i><h3>Mudanzas</h3><p>Mudanzas seguras y económicas</p></div>
+            <div class="service-card"><i class="fas fa-users"></i><h3>Transporte de Pasajeros</h3><p>Viajes locales y turísticos</p></div>
+            <div class="service-card"><i class="fas fa-map-marked-alt"></i><h3>Turismo</h3><p>Tours guiados y experiencias locales</p></div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="como-funciona">
+        <h2>Cómo Funciona</h2>
+        <div class="steps">
+            <div class="step"><div class="step-number">1</div><h3>Solicita</h3><p>Describe el servicio que necesitas</p></div>
+            <div class="step"><div class="step-number">2</div><h3>Conecta</h3><p>Recibe ofertas de proveedores cercanos</p></div>
+            <div class="step"><div class="step-number">3</div><h3>Contrata</h3><p>Elige el mejor precio y calificación</p></div>
+        </div>
+    </section>
+
+    <section class="memberships">
+        <h2>Membresías para Proveedores</h2>
+        <div class="membership-grid">
+            <div class="membership-card">
+                <h3>Básica</h3><div class="price">$5/mes</div>
+                <ul><li>5% comisión</li><li>10 publicaciones/mes</li><li>Soporte básico</li></ul>
+                <button class="btn-membership">Elegir</button>
+            </div>
+            <div class="membership-card featured">
+                <div class="badge">Popular</div>
+                <h3>Profesional</h3><div class="price">$10/mes</div>
+                <ul><li>3% comisión</li><li>Publicaciones ilimitadas</li><li>Soporte prioritario</li><li>Promociones destacadas</li></ul>
+                <button class="btn-membership">Elegir</button>
+            </div>
+            <div class="membership-card">
+                <h3>Diamante</h3><div class="price">Gratis</div>
+                <ul><li>0% comisión</li><li>Todo ilimitado</li><li>Promoción especial</li></ul>
+                <button class="btn-membership">Solicitar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="register-section" id="registro">
+        <div class="register-card">
+            <h2>Registro de Cliente</h2>
+            <form id="clientForm">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="tel" placeholder="Teléfono" required>
+                <select required>
+                    <option value="">Selecciona tu país</option>
+                    <option value="mx">México</option>
+                    <option value="co">Colombia</option>
+                    <option value="ar">Argentina</option>
+                    <option value="cl">Chile</option>
+                    <option value="pe">Perú</option>
+                    <option value="br">Brasil</option>
+                    <option value="es">España</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit" class="btn-submit">Crear Cuenta</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="register-section" id="registro-proveedor">
+        <div class="register-card">
+            <h2>Registro de Proveedor</h2>
+            <form id="providerForm">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="tel" placeholder="Teléfono" required>
+                <select required>
+                    <option value="">Tipo de servicio</option>
+                    <option value="flete">Flete y Carga</option>
+                    <option value="mudanza">Mudanzas</option>
+                    <option value="pasajeros">Transporte de Pasajeros</option>
+                    <option value="turismo">Turismo</option>
+                </select>
+                <select required>
+                    <option value="">País</option>
+                    <option value="mx">México</option>
+                    <option value="co">Colombia</option>
+                    <option value="ar">Argentina</option>
+                    <option value="cl">Chile</option>
+                    <option value="pe">Perú</option>
+                    <option value="br">Brasil</option>
+                    <option value="es">España</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <input type="text" placeholder="Ciudad" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit" class="btn-submit">Registrarme como Proveedor</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand"><i class="fas fa-bolt"></i><span>Flixli</span><p>Servicios locales, globales</p></div>
+            <div class="footer-links"><a href="#">Términos</a><a href="#">Privacidad</a><a href="#">Contacto</a></div>
+            <div class="footer-social"><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="fab fa-whatsapp"></i></div>
+        </div>
+        <div class="footer-bottom"><p>Flixli - Todos los derechos reservados</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
