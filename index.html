@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixly - Marketplace Global de Servicios</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Selector de Modalidad -->
+    <div id="mode-selector" class="mode-selector">
+        <div class="mode-container">
+            <h2>¿Cómo quieres usar Fixly?</h2>
+            <div class="mode-cards">
+                <div class="mode-card" onclick="selectMode('global')">
+                    <div class="mode-icon">🌐</div>
+                    <h3>Fixly Global</h3>
+                    <p>Servicios locales en cualquier país del mundo</p>
+                    <span class="mode-badge">Gratis</span>
+                </div>
+                <div class="mode-card" onclick="selectMode('pro')">
+                    <div class="mode-icon">💼</div>
+                    <h3>Fixly Pro</h3>
+                    <p>Servicios premium y profesionales verificados</p>
+                    <span class="mode-badge">Premium</span>
+                </div>
+                <div class="mode-card" onclick="selectMode('travel')">
+                    <div class="mode-icon">✈️</div>
+                    <h3>Fixly Travel</h3>
+                    <p>Turismo, transporte y experiencias locales</p>
+                    <span class="mode-badge">Viajes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- App Principal -->
+    <div id="app" class="app hidden">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🔧</span>
+                <span class="logo-text">Fixly</span>
+                <span id="current-mode" class="mode-label">Global</span>
+            </div>
+            <nav class="nav">
+                <a href="#" onclick="showSection('services')">Servicios</a>
+                <a href="#" onclick="showSection('tourism')">Turismo</a>
+                <a href="#" onclick="showSection('transport')">Transporte</a>
+                <a href="#" onclick="showSection('community')">Comunidad</a>
+                <a href="#" onclick="showSection('prices')">Precios</a>
+                <a href="#" onclick="showSection('ai')">IA Studio</a>
+            </nav>
+            <div class="auth">
+                <button class="btn-login">Iniciar sesión</button>
+                <button class="btn-register">Registrarse</button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🚀</span> La super-app #1 para servicios, viajes y transporte
+                </div>
+                <h1>Todo lo que necesitas<br>en un solo lugar</h1>
+                <p class="hero-subtitle">
+                    Servicios locales, destinos de viaje, transporte confiable y herramientas IA. 
+                    Encuentra, reserva y paga — todo desde una app.
+                </p>
+                <div class="hero-search">
+                    <input type="text" placeholder="¿Qué servicio, destino o producto buscas?">
+                    <select>
+                        <option>Todas las zonas</option>
+                        <option>América</option>
+                        <option>Europa</option>
+                        <option>Asia</option>
+                        <option>Oceanía</option>
+                        <option>África</option>
+                    </select>
+                    <button class="btn-explore">Explorar</button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">5,000+</span>
+                    <span class="stat-label">Profesionales</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Países</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50,000+</span>
+                    <span class="stat-label">Servicios</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Calificación</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secciones por Modalidad -->
+        <section id="services-section" class="section">
+            <h2>Servicios Destacados</h2>
+            <div class="services-grid" id="services-grid">
+                <!-- Se llena con JavaScript según la modalidad -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🔧</span>
+                    <span>Fixly</span>
+                    <p>Marketplace global de servicios profesionales</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Plataforma</h4>
+                        <a href="#">Servicios</a>
+                        <a href="#">Turismo</a>
+                        <a href="#">Transporte</a>
+                        <a href="#">Comunidad</a>
+                    </div>
+                    <div>
+                        <h4>Empresa</h4>
+                        <a href="#">Nosotros</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Carreras</a>
+                        <a href="#">Contacto</a>
+                    </div>
+                    <div>
+                        <h4>Legal</h4>
+                        <a href="#">Privacidad</a>
+                        <a href="#">Términos</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Fixly. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
